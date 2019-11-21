@@ -1,0 +1,8 @@
+package com.myapp.spring.client;
+
+import org.springframework.cloud.openfeign.FeignClient;
+
+@FeignClient("PHASES-MS")
+public interface PhaseClient {
+
+}

@@ -1,0 +1,24 @@
+package com.myapp.spring.model;
+
+import java.io.Serializable;
+
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
+import lombok.Data;
+
+@Data
+@Document
+public class Clients implements Serializable{
+	@Id
+	private int id;
+	private String name;
+	private Color color;
+	private int noOfProjects;
+	/*
+	 * @JsonManagedReference private Phases phases;
+	 */
+	
+}

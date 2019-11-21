@@ -1,0 +1,5 @@
+package com.myapp.spring.client;
+
+public interface ClientsClient {
+
+}

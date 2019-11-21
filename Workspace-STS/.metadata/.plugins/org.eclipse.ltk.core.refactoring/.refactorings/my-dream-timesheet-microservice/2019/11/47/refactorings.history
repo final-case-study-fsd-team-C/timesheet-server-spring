@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Color.java&apos; to &apos;my-spring-clients-service/src/main/java/com.myapp.spring.model&apos;&#x0D;&#x0A;- Original project: &apos;my-dream-timesheet-microservice&apos;&#x0D;&#x0A;- Destination element: &apos;my-spring-clients-service/src/main/java/com.myapp.spring.model&apos;&#x0D;&#x0A;- Original element: &apos;com.myapp.spring.model.Color.java&apos;" description="Copy compilation unit" destination="=my-spring-clients-service/src\/main\/java&lt;com.myapp.spring.model" element1="/src\/main\/java&lt;com.myapp.spring.model{Color.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1574159074171" units="1" version="1.0"/>
+</session>
