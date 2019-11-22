@@ -44,7 +44,7 @@ public class ProjectAPI {
 	@PostMapping("/projects")
 	public ResponseEntity<Project> addProject(@RequestBody Project timesheet)
 	{		
-		timesheet.setId(counterService.getNextSequence(Project.SEQUENCE_NAME));
+		timesheet.setId(counterService.generateSequence(Project.SEQUENCE_NAME));
 		timesheet=repository.save(timesheet);
 		return new ResponseEntity<Project>(timesheet, HttpStatus.CREATED);
 	}

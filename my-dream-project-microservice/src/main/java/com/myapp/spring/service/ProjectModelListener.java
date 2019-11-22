@@ -17,10 +17,12 @@ public ProjectModelListener(CounterService counterService) {
 this.counterService =counterService;
 }
 
+
+
 @Override
 public void onBeforeConvert(BeforeConvertEvent<Project> event) {
-if (event.getSource().getId() < 1) {
-event.getSource().setId(counterService.getNextSequence(Project.SEQUENCE_NAME));
-}
+    if (event.getSource().getId() < 1) {
+        event.getSource().setId(counterService.generateSequence(Project.SEQUENCE_NAME));
+    }
 }
 }

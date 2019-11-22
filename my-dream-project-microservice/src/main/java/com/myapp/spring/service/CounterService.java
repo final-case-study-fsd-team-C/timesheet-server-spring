@@ -11,19 +11,18 @@ import org.springframework.data.mongodb.core.MongoOperations;
 import org.springframework.data.mongodb.core.query.Update;
 import org.springframework.stereotype.Service;
 
-import com.myapp.spring.model.Project;
+import com.myapp.spring.model.DatabaseSequence;
 @Service
 public class CounterService {
 	
-	@Autowired private MongoOperations mongo;
+	@Autowired private MongoOperations mongoOperations;
 	   
-	  public long getNextSequence(String seqName) {
-	 
-		  Project counter = mongo.findAndModify(query(where("_id").is(seqName)),
-				  new Update().inc("seq",1), options().returnNew(true).upsert(true),
-				  Project.class);
-				  return !Objects.isNull(counter) ? counter.getSeq() : 1;
+	public long generateSequence(String seqName) {
 
-	  }
+        DatabaseSequence counter = mongoOperations.findAndModify(query(where("_id").is(seqName)),
+                new Update().inc("seq",1), options().returnNew(true).upsert(true),
+                DatabaseSequence.class);
+        return !Objects.isNull(counter) ? counter.getSeq() : 1;
 
+    }
 }
