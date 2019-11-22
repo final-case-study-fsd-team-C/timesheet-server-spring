@@ -20,7 +20,6 @@ public class Timesheet {
 private int id;
 
 //@JsonManagedReference
-
 private List<Project> project = new ArrayList<>();
 
 
@@ -30,11 +29,6 @@ private int timeWorked;
 private String phase;
 private String date;
 private String note;
-
-@Transient
-private List<Phases> phases = new ArrayList<>();
-
-
 
 
 }

@@ -18,18 +18,15 @@ public class Project {
 	private int id;
 	private String name;
 	private Color projectColor;
+	private String description;
 	
 	private int clientId;
 	
 	//@JsonManagedReference
-	
 	private Member members;
 	
 	@Transient
 	private List<Phases> phases = new ArrayList<>();
 	
-//	@Transient
-//	private Clients clients;
-//	
 	
 }

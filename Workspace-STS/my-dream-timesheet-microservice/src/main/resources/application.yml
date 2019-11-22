@@ -3,4 +3,4 @@ spring:
     config:
       uri:
       - http://localhost:8888  application:    name: timesheet-ms
-server:  port: 8881
+server:  port: 8003

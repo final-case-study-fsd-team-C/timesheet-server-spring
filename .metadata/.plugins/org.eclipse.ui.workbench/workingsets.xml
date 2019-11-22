@@ -26,4 +26,5 @@
 <item elementID="=my-spring-phases-service/target\/generated-test-sources\/test-annotations" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 </workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1574243966264_2" label="Window Working Set" name="Aggregate for window 1574243966264"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1574349929935_3" label="Window Working Set" name="Aggregate for window 1574349929935"/>
 </workingSetManager>
